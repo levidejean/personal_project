@@ -5,6 +5,7 @@ const cors = require ('cors');
 const massive = require('massive');
 const session = require ('express-session');
 const passport = require('passport');
+const path = require('path');
 
 const { getUser, strat, logout } = require(`${__dirname}/controllers/authControl`);
 const {getData, getImg} =  require('./controllers/dataController');
@@ -14,6 +15,8 @@ const {getPlaceId} = require(`${__dirname}/controllers/reviewController`);
 const port = process.env.PORT || 3001;
 
 const app = express();
+app.use( express.static( `${__dirname}/../build` ) );
+
 
  //console.log(process.env.CONNECTION_STRING);
 
@@ -71,6 +74,10 @@ app.get('/getdata/:info', getData);
 
 //review endpoints
 app.get('/reviews/:id', getPlaceId);
+
+app.get('*', (req, res)=>{
+    res.sendFile(path.join(__dirname, '../build/index.html'));
+});
 
 app.listen(port, () => {
     console.log(`Listening on port: ${port}`);
