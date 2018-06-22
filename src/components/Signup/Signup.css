@@ -1,0 +1,56 @@
+.Signup-body{
+    background-image: url("https://images.unsplash.com/photo-1448043552756-e747b7a2b2b8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=33b0e638540ff8ab1325e2ed73bafd58&auto=format&fit=crop&w=800&q=60");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.Signup-container{
+    height: 400px;
+    width: 600px;
+    border: solid;
+    background-color: rgba(0, 0, 0, .75);
+    margin-top: 60px;
+}
+.Signup-header{
+    color: wheat;
+    display: flex;
+    justify-content: center;
+}
+.Input-container-1{
+    display: flex;
+    justify-content: space-around;
+    color: wheat;
+}
+.Input-container-2{
+color: wheat;
+display: flex;
+justify-content: space-around;
+}
+.Email-input{
+    width: 35%;
+}
+.Email-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.Button-container-2{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.signup-button-2{
+    height: 40px;
+    width: 100px;
+    font-size: 12pt;
+    background-color: rgba(0,0,0,.75);
+    color: wheat;
+    font-family: cursive;
+    
+    border-radius: 10px;
+    }

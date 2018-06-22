@@ -1,0 +1,22 @@
+.Login-body {
+  height: 100vh;
+  padding: 10px;
+  background-image: url("https://images.unsplash.com/photo-1523905330026-b8bd1f5f320e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=90a4f62a13955fd92b02cb3ae8c31b94&auto=format&fit=crop&w=800&q=60"); 
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.signup-button{
+height: 70px;
+width: 200px;
+font-size: 20pt;
+background-color: rgba(0,0,0,.75);
+color: wheat;
+font-family: cursive;
+
+border-radius: 10px;
+}
+

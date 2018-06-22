@@ -1,0 +1,28 @@
+.header-container {
+  position: fixed;
+  width: 100%;
+  top: 10px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.button-box {
+  display: flex;
+  justify-content: flex-end;
+}
+.header-text {
+  padding-top: 10px;
+  color: wheat;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: cursive;
+}
+.Login-button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.75);
+  font-size: 15pt;
+  color: wheat;
+  font-family: cursive;
+}
+.button-box {
+  padding-right: 20px;
+}
