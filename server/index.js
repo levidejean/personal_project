@@ -60,8 +60,8 @@ app.get(
     '/login',
     passport.authenticate('auth0', {
         //successRedirect: 'http://localhost:3000/#/picker',
-        successredirect: 'http://167.99.159.18/#/picker',
-        failRedirect: '/#/'
+        successredirect: '/#/picker',
+        failRedirect: '/login'
     })
 );
 
