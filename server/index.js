@@ -62,8 +62,8 @@ passport.deserializeUser((user, done) => done(null, user));
 app.get(
   "/login",
   passport.authenticate("auth0", {
-    successRedirect: "http://localhost:3000/picker",
-    // successRedirect: '/picker',
+    //successRedirect: "http://localhost:3000/picker",
+    successRedirect: "/picker",
     failRedirect: "/login"
   })
 );
